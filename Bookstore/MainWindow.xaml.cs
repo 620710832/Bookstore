@@ -46,6 +46,7 @@ namespace Bookstore
                     Main_Page main_Page = new Main_Page(entries[0]);
                     main_Page.DataContext = this;
                     main_Page.ShowDialog();
+                    MessageBox.Show("sds");
                 }
                 else
                 {
