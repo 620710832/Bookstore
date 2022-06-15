@@ -1,0 +1,20 @@
+﻿<Window x:Class="Bookstore.Book_ADD"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bookstore"
+        mc:Ignorable="d"
+        Title="Book_ADD" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="Book_name" HorizontalAlignment="Center" Margin="0,125,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="236" TextChanged="TextBox_TextChanged" Height="36"/>
+        <TextBlock HorizontalAlignment="Left" Margin="142,125,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="18" Width="101"><Run Language="th-th" Text="เพิ่ม"/><Run Language="th-th" Text="ชื่อหนังสือ"/></TextBlock>
+        <TextBlock x:Name="UID" HorizontalAlignment="Left" Margin="618,389,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="14" Width="136" FlowDirection="RightToLeft"/>
+        <TextBlock HorizontalAlignment="Left" Margin="641,389,0,0" TextWrapping="Wrap" Text="UID :" VerticalAlignment="Top"/>
+        <TextBox x:Name="Book_price" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Width="236" TextChanged="TextBox_TextChanged" Height="36"/>
+        <TextBlock HorizontalAlignment="Left" Margin="142,199,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="18" Width="101"><Run Language="th-th" Text="ราคาของหนังสือ"/></TextBlock>
+        <Button x:Name="add_book_confirm" Content="ยืนยันการเพิ่มหนังสือ" HorizontalAlignment="Left" Margin="424,289,0,0" VerticalAlignment="Top" Height="31" Width="191" Click="add_book_confirm_Click"/>
+        <Button x:Name="add_book_cancle" Content="กลับสู่หน้าหลัก" HorizontalAlignment="Left" Margin="142,289,0,0" VerticalAlignment="Top" Height="31" Width="191" Click="add_book_cancle_Click"/>
+
+    </Grid>
+</Window>

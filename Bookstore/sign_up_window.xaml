@@ -1,0 +1,27 @@
+﻿<Window x:Class="Bookstore.sign_up_window"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bookstore"
+        mc:Ignorable="d"
+        Title="sign_up_window" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="69*"/>
+            <ColumnDefinition Width="731*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="cus_name" HorizontalAlignment="Left" Margin="231,51,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="284" Height="34" Grid.Column="1"/>
+        <TextBlock HorizontalAlignment="Left" Margin="95,51,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1"><Run Language="th-th" Text="ชื่อ"/><Run Text="-"/><Run Language="th-th" Text="นามสกุล"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="95,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="16" RenderTransformOrigin="0.56,1.298" Grid.Column="1"><Run Text="E-"/><Run Text="mail"/><LineBreak/><Run/></TextBlock>
+        <TextBox x:Name="cus_email" HorizontalAlignment="Left" Margin="231,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="284" Height="34" Grid.Column="1"/>
+        <TextBox x:Name="cus_address" HorizontalAlignment="Left" Margin="231,173,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="284" Height="68" Grid.Column="1"/>
+        <TextBlock HorizontalAlignment="Left" Margin="95,173,0,0" TextWrapping="Wrap" Text="Address" VerticalAlignment="Top" RenderTransformOrigin="0.494,0.83" Grid.Column="1"/>
+        <TextBlock HorizontalAlignment="Left" Margin="95,263,0,0" TextWrapping="Wrap" Text="password" VerticalAlignment="Top" Grid.Column="1"/>
+        <TextBlock HorizontalAlignment="Left" Margin="95,319,0,0" TextWrapping="Wrap" Text="confirm password" VerticalAlignment="Top" Grid.Column="1"/>
+        <Button x:Name="sign_up" Grid.Column="1" Content="Sign up" HorizontalAlignment="Left" Margin="112,372,0,0" VerticalAlignment="Top" Height="30" Width="417" Click="sign_up_Click"/>
+        <PasswordBox x:Name="cus_password" Grid.Column="1" HorizontalAlignment="Left" Margin="231,263,0,0" VerticalAlignment="Top" VerticalContentAlignment="Center"  Width="284" Height="34"/>
+        <PasswordBox x:Name="cus_password_confirm" Grid.Column="1" HorizontalAlignment="Left" Margin="231,319,0,0" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="284" Height="34"/>
+
+    </Grid>
+</Window>
